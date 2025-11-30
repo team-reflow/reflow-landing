@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기능 - Reflow</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⟳</span> Reflow
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">홈</a></li>
+                <li><a href="features.html" class="active">기능</a></li>
+                <li><a href="pricing.html">가격</a></li>
+            </ul>
+            <a href="index.html#cta" class="btn btn-primary nav-cta">무료로 시작하기</a>
+        </div>
+    </nav>
+
+    <!-- Features Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <span class="badge">기능 소개</span>
+            <h1>개발 경험 없이도<br><span class="gradient-text">프로처럼 웹사이트를 관리하세요</span></h1>
+            <p>Reflow의 AI 기능들이 복잡한 코드 작업을 대신 처리합니다</p>
+        </div>
+    </section>
+
+    <!-- Main Features -->
+    <section class="main-features">
+        <div class="container">
+            <!-- Feature 1 -->
+            <div class="feature-block">
+                <div class="feature-content">
+                    <span class="feature-label">핵심 기능</span>
+                    <h2>자연어 코드 수정</h2>
+                    <p>복잡한 코드 문법을 몰라도 괜찮습니다. 원하는 변경사항을 일상 언어로 설명하면 AI가 정확히 이해하고 코드를 수정합니다.</p>
+                    <ul class="feature-list">
+                        <li>✓ 한국어로 자유롭게 요청</li>
+                        <li>✓ 맥락을 이해하는 스마트 AI</li>
+                        <li>✓ 복잡한 수정도 한 번에</li>
+                        <li>✓ 추가 질문으로 명확한 수정</li>
+                    </ul>
+                </div>
+                <div class="feature-demo">
+                    <div class="demo-card">
+                        <div class="demo-header">예시 요청</div>
+                        <div class="demo-content">
+                            <div class="demo-request">
+                                <span class="demo-label">요청</span>
+                                <p>"상품 목록 페이지에서 가격이 10만원 이상인 상품들은 '프리미엄' 배지가 보이도록 해줘"</p>
+                            </div>
+                            <div class="demo-response">
+                                <span class="demo-label">AI 응답</span>
+                                <p>ProductList 컴포넌트를 수정했습니다. price >= 100000인 상품에 프리미엄 배지를 추가했습니다.</p>
+                                <div class="demo-code">
+                                    <code>{price >= 100000 && &lt;Badge type="premium"&gt;프리미엄&lt;/Badge&gt;}</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-block reverse">
+                <div class="feature-content">
+                    <span class="feature-label">안전한 배포</span>
+                    <h2>미리보기 & 원클릭 롤백</h2>
+                    <p>모든 변경사항은 실제 적용 전에 미리 확인할 수 있습니다. 문제가 생기면 언제든 이전 상태로 즉시 복원하세요.</p>
+                    <ul class="feature-list">
+                        <li>✓ 실시간 미리보기 환경</li>
+                        <li>✓ 변경 전후 비교 화면</li>
+                        <li>✓ 원클릭 즉시 롤백</li>
+                        <li>✓ 무제한 버전 히스토리</li>
+                    </ul>
+                </div>
+                <div class="feature-demo">
+                    <div class="preview-demo">
+                        <div class="preview-header">
+                            <span class="preview-tab active">변경 후</span>
+                            <span class="preview-tab">변경 전</span>
+                        </div>
+                        <div class="preview-content">
+                            <div class="preview-frame">
+                                <div class="mock-header" style="background: #3B82F6;"></div>
+                                <div class="mock-content"></div>
+                            </div>
+                        </div>
+                        <div class="preview-actions">
+                            <button class="btn btn-secondary btn-sm">롤백</button>
+                            <button class="btn btn-primary btn-sm">배포하기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="feature-block">
+                <div class="feature-content">
+                    <span class="feature-label">자동화</span>
+                    <h2>자동 배포 파이프라인</h2>
+                    <p>복잡한 배포 과정을 신경 쓸 필요 없습니다. AI가 코드 수정, 테스트, 빌드, 배포까지 모든 과정을 자동으로 처리합니다.</p>
+                    <ul class="feature-list">
+                        <li>✓ 자동 코드 검증</li>
+                        <li>✓ 빌드 에러 자동 수정</li>
+                        <li>✓ 무중단 배포</li>
+                        <li>✓ CDN 자동 캐시 갱신</li>
+                    </ul>
+                </div>
+                <div class="feature-demo">
+                    <div class="pipeline-demo">
+                        <div class="pipeline-step completed">
+                            <div class="pipeline-icon">✓</div>
+                            <span>코드 수정</span>
+                        </div>
+                        <div class="pipeline-line completed"></div>
+                        <div class="pipeline-step completed">
+                            <div class="pipeline-icon">✓</div>
+                            <span>코드 검증</span>
+                        </div>
+                        <div class="pipeline-line completed"></div>
+                        <div class="pipeline-step completed">
+                            <div class="pipeline-icon">✓</div>
+                            <span>빌드</span>
+                        </div>
+                        <div class="pipeline-line active"></div>
+                        <div class="pipeline-step active">
+                            <div class="pipeline-icon">⟳</div>
+                            <span>배포 중...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="feature-block reverse">
+                <div class="feature-content">
+                    <span class="feature-label">협업</span>
+                    <h2>팀 협업 기능</h2>
+                    <p>팀원들과 함께 웹사이트를 관리하세요. 권한 설정, 변경 이력 추적, 승인 워크플로우까지 팀 협업에 필요한 모든 기능을 제공합니다.</p>
+                    <ul class="feature-list">
+                        <li>✓ 역할별 권한 관리</li>
+                        <li>✓ 변경 승인 워크플로우</li>
+                        <li>✓ 실시간 활동 로그</li>
+                        <li>✓ 팀원 멘션 & 알림</li>
+                    </ul>
+                </div>
+                <div class="feature-demo">
+                    <div class="team-demo">
+                        <div class="activity-item">
+                            <div class="activity-avatar">김</div>
+                            <div class="activity-content">
+                                <strong>김서연</strong>님이 헤더 색상을 변경했습니다
+                                <span class="activity-time">2분 전</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-avatar">박</div>
+                            <div class="activity-content">
+                                <strong>박준호</strong>님이 변경사항을 승인했습니다
+                                <span class="activity-time">5분 전</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-avatar">이</div>
+                            <div class="activity-content">
+                                <strong>이민지</strong>님이 새 페이지를 추가했습니다
+                                <span class="activity-time">1시간 전</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- More Features -->
+    <section class="more-features">
+        <div class="container">
+            <h2 class="section-title">더 많은 기능들</h2>
+            <div class="features-grid">
+                <div class="mini-feature">
+                    <div class="mini-icon">🔗</div>
+                    <h3>GitHub 연동</h3>
+                    <p>기존 GitHub 저장소와 바로 연결하세요</p>
+                </div>
+                <div class="mini-feature">
+                    <div class="mini-icon">📱</div>
+                    <h3>반응형 미리보기</h3>
+                    <p>모바일, 태블릿, 데스크톱에서 미리 확인</p>
+                </div>
+                <div class="mini-feature">
+                    <div class="mini-icon">🎨</div>
+                    <h3>디자인 시스템</h3>
+                    <p>일관된 스타일을 자동으로 유지</p>
+                </div>
+                <div class="mini-feature">
+                    <div class="mini-icon">📈</div>
+                    <h3>성능 모니터링</h3>
+                    <p>사이트 속도와 성능을 실시간 확인</p>
+                </div>
+                <div class="mini-feature">
+                    <div class="mini-icon">🔐</div>
+                    <h3>보안 스캔</h3>
+                    <p>취약점을 자동으로 탐지하고 수정</p>
+                </div>
+                <div class="mini-feature">
+                    <div class="mini-icon">🌐</div>
+                    <h3>다국어 지원</h3>
+                    <p>여러 언어로 콘텐츠 관리</p>
+                </div>
+                <div class="mini-feature">
+                    <div class="mini-icon">📊</div>
+                    <h3>SEO 최적화</h3>
+                    <p>검색 엔진 최적화 자동 분석</p>
+                </div>
+                <div class="mini-feature">
+                    <div class="mini-icon">⏰</div>
+                    <h3>예약 배포</h3>
+                    <p>원하는 시간에 자동 배포 설정</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="tech-stack">
+        <div class="container">
+            <h2 class="section-title">지원하는 기술 스택</h2>
+            <p class="section-desc">대부분의 웹 프레임워크와 호환됩니다</p>
+            <div class="tech-logos">
+                <div class="tech-logo">
+                    <span>React</span>
+                </div>
+                <div class="tech-logo">
+                    <span>Vue.js</span>
+                </div>
+                <div class="tech-logo">
+                    <span>Next.js</span>
+                </div>
+                <div class="tech-logo">
+                    <span>Nuxt</span>
+                </div>
+                <div class="tech-logo">
+                    <span>HTML/CSS</span>
+                </div>
+                <div class="tech-logo">
+                    <span>WordPress</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>모든 기능을 직접 체험해보세요</h2>
+                <p>14일 무료 체험 기간 동안 모든 기능을 제한 없이 사용할 수 있습니다.</p>
+                <a href="index.html#cta" class="btn btn-primary btn-lg">무료로 시작하기</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">⟳</span> Reflow
+                    </a>
+                    <p>AI로 더 쉬운 웹사이트 관리</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>서비스</h4>
+                        <ul>
+                            <li><a href="features.html">기능</a></li>
+                            <li><a href="pricing.html">가격</a></li>
+                            <li><a href="#">문서</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>회사</h4>
+                        <ul>
+                            <li><a href="#">소개</a></li>
+                            <li><a href="#">블로그</a></li>
+                            <li><a href="#">채용</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>지원</h4>
+                        <ul>
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">문의하기</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Reflow. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
